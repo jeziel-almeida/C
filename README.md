@@ -1,5 +1,7 @@
 # Programas em C++
 
+![CPP Wallpaper](https://bs-uploads.toptal.io/blackfish-uploads/blog/article/content/cover_image_file/cover_image/16981/cover-0325-LearnCandC__Languages_Dan_Newsletter-743100f051077054fa1cc613ff4523a2.png)
+
 Programas | Descrição
 ----------|----------
 [exibir-num-ordem-inversa.cpp](https://github.com/jeziel-almeida/CPP/blob/main/exibir-num-ordem-inversa.cpp) | Programa que solicita ao usuário a entrada de 5 números e exibe-os na tela em ordem inversa da leitura.
