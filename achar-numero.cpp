@@ -1,4 +1,5 @@
 #include <iostream>
+#include <queue>
 
 using namespace std;
 
@@ -7,9 +8,17 @@ int main() {
 
     int num[5], i;
 
+    queue <string> fila;
+    fila.push("primeiro");
+    fila.push("segundo");
+    fila.push("terceiro");
+    fila.push("quarto");
+    fila.push("quinto");
+
     for(i=0;i<5;i++) {
-        printf("Digite o %d número: ", i+1);
+        cout<<"Digite o "<<fila.front()<<" número: ";
         scanf("%d", &num[i]);
+        fila.pop();
     }
 
     printf("\nNúmeros armazenados com sucesso!\n");
@@ -29,10 +38,13 @@ int main() {
             }
         }
         if(encontrado==1)
-            printf("\nEsse numero está no vetor na posição: %d.\n", quant);
+            printf("\nEsse número está no vetor na posição: %d.\n", quant);
         else 
-            printf("\nEsse número não está no vetor.\n\n");
+            printf("\nEsse número não está no vetor.\n");
     }
+
+    return 0;
+}
 
     return 0;
 }
