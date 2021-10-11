@@ -2,8 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+//constante que define a quantidade de alunos
 #define MAX_ALUNOS 10
 
+//struct
 typedef struct {
     char nome[50];
     float notas[4];
@@ -12,6 +14,7 @@ typedef struct {
 
 Aluno alunos[MAX_ALUNOS];
 
+//Declaração das funções
 void menu();
 void cadastrar();
 void remover();
@@ -20,9 +23,11 @@ void aprovados();
 void pesquisar();
 void listar();
 
+//Função principal
 int main(int argc, char const *argv[])
 {
     menu();
+    printf("\n Programa finalizado\n");
     return 0;
 }
 
@@ -54,9 +59,9 @@ void menu() {
                 aprovados();
             break;
         }
-        getchar();
-    } while(op!=0); 
-
+        if(op!=0)
+            getchar();
+    } while(op!=0);
 }
 
 void cadastrar() {
@@ -89,12 +94,12 @@ void cadastrar() {
                 strcpy(alunos[i].nome, name);
                 alunos[i].ativo = 1;
                 break;
-            }         
+            }
         }
-        
         printf("\n 1 - Cadastrar novo aluno\n 0 - Menu\n\n Digite: ");
         scanf("%d", &op);
-        getchar();
+        if(op!=0)
+            getchar();
     } while(op!=0);
 }
 
@@ -188,7 +193,7 @@ void listar() {
             printf(" 2 Bim: %.2f\n", alunos[i].notas[1]);
             printf(" 3 Bim: %.2f\n", alunos[i].notas[2]);
             printf(" 4 Bim: %.2f\n", alunos[i].notas[3]);
-        }       
+        }
     }
 }
 
