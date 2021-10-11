@@ -1,4 +1,4 @@
-# Programas em C++
+# Programas em C/C++
 
 ![CPP Wallpaper](https://bs-uploads.toptal.io/blackfish-uploads/blog/article/content/cover_image_file/cover_image/16981/cover-0325-LearnCandC__Languages_Dan_Newsletter-743100f051077054fa1cc613ff4523a2.png)
 
